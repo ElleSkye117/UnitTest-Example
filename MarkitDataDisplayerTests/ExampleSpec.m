@@ -1,6 +1,6 @@
 //
-//  MarkitDataDisplayerTests.m
-//  MarkitDataDisplayerTests
+//  ExampleSpec.m
+//  ExampleSpec
 //
 //  Created by michael.leber on 1/21/14.
 //  Copyright (c) 2014 Markit. All rights reserved.
@@ -13,18 +13,28 @@
 @interface MarketSymbol : NSObject
 @property (nonatomic, copy) NSString *symbolName;
 @end
+@implementation MarketSymbol
+
+@end
 @interface MarketDisplayController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel *symbolNameLabel;
+@property (nonatomic, strong) MarketSymbol *symbol;
 
 - (void)setSymbol:(MarketSymbol*)symbol;
 
 @end
 
 @implementation MarketDisplayController
-- (void)setSymbol:(MarketSymbol*)symbol
+- (void)viewDidLoad
 {
-    [self.symbolNameLabel setText:symbol.symbolName];
+    [super viewDidLoad];
+    
+    UILabel *newLabel = [[UILabel alloc] init];
+    [self.view addSubview:newLabel];
+    self.symbolNameLabel = newLabel;
+    [self.symbolNameLabel setText:self.symbol.symbolName];
 }
+
 
 @end
 
