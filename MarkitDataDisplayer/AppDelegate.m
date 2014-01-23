@@ -17,6 +17,7 @@
     // Override point for customization after application launch.
     MarkitQuoteViewController *rootVC = [[MarkitQuoteViewController alloc] init];
     [self.window setRootViewController:rootVC];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

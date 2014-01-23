@@ -27,7 +27,7 @@
 SpecBegin(AppDelegate)
 
 describe(@"AppDelegate", ^{
-    it(@"On launch, the window should have the MarketQuoteViewController as the rootViewController ", ^{
+    it(@"On launch, the window should have the MarkitQuoteViewController as the rootViewController ", ^{
         // Arrange
         AppDelegate *appDelegate = [[AppDelegate alloc] init];
         
@@ -36,7 +36,17 @@ describe(@"AppDelegate", ^{
         
         // Assert
         expect(appDelegate.window.rootViewController).to.beKindOf([MarkitQuoteViewController class]);
-    });    
+    });
+    it(@"On launch, the window should be made key and visible", ^{
+        // Arrange
+        AppDelegate *appDelegate = [[AppDelegate alloc] init];
+        
+        // Act
+        [appDelegate application:[UIApplication sharedApplication] didFinishLaunchingWithOptions:nil];
+        
+        // Assert
+        expect(appDelegate.window.isKeyWindow).to.beTruthy();
+    });
 });
 
 SpecEnd
