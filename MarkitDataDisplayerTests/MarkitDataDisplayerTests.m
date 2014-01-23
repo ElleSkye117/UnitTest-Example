@@ -29,10 +29,10 @@
 @end
 
 
-SpecBegin(TestSpec)
+SpecBegin(MarketDisplayController)
 
 // Descriptive name here self documents the code. People quickly know what it is testing and how it should behave
-it(@"On first load, the symbol label view, should contain the name of the symbol", ^{
+it(@"On first display, the symbol label view, should contain the name of the symbol", ^{
     // Set up in three parts
     // Arrange
     MarketDisplayController *controller = [[MarketDisplayController alloc] init];
@@ -42,7 +42,7 @@ it(@"On first load, the symbol label view, should contain the name of the symbol
     [controller setSymbol:stubSymbol];
     
     // Act
-    // Loads the view, basically simulates how iOS View controller architecture will access this.
+    // Loads the view. This simulates how iOS View controller architecture will load a UIViewController's view. This implicitly calls viewDidLoad, which is where the code will set up the label.
     [controller view];
     
     // Assert
