@@ -19,6 +19,9 @@
 		2838FC2E188F2A4900746D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2838FC16188F2A4900746D81 /* UIKit.framework */; };
 		2838FC36188F2A4900746D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2838FC34188F2A4900746D81 /* InfoPlist.strings */; };
 		2838FC38188F2A4900746D81 /* ExampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC37188F2A4900746D81 /* ExampleSpec.m */; };
+		2838FC921891899200746D81 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC911891899200746D81 /* AppDelegateSpec.m */; };
+		2838FC9618918BB200746D81 /* MarkitQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2838FC9418918BB200746D81 /* MarkitQuoteViewController.m */; };
+		2838FC9718918BB200746D81 /* MarkitQuoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2838FC9518918BB200746D81 /* MarkitQuoteViewController.xib */; };
 		2D35B97A1A2C423C95151FE0 /* libPods-MarkitDataDisplayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0300A5572B14808AE644A1E /* libPods-MarkitDataDisplayerTests.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,10 @@
 		2838FC33188F2A4900746D81 /* MarkitDataDisplayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarkitDataDisplayerTests-Info.plist"; sourceTree = "<group>"; };
 		2838FC35188F2A4900746D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2838FC37188F2A4900746D81 /* ExampleSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleSpec.m; sourceTree = "<group>"; };
+		2838FC911891899200746D81 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
+		2838FC9318918BB200746D81 /* MarkitQuoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkitQuoteViewController.h; sourceTree = "<group>"; };
+		2838FC9418918BB200746D81 /* MarkitQuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkitQuoteViewController.m; sourceTree = "<group>"; };
+		2838FC9518918BB200746D81 /* MarkitQuoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkitQuoteViewController.xib; sourceTree = "<group>"; };
 		46ADD2038EEB4CE299AD1D4C /* Pods-MarkitDataDisplayerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkitDataDisplayerTests.xcconfig"; path = "Pods/Pods-MarkitDataDisplayerTests.xcconfig"; sourceTree = "<group>"; };
 		E0300A5572B14808AE644A1E /* libPods-MarkitDataDisplayerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarkitDataDisplayerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +124,9 @@
 				2838FC22188F2A4900746D81 /* AppDelegate.m */,
 				2838FC24188F2A4900746D81 /* Images.xcassets */,
 				2838FC19188F2A4900746D81 /* Supporting Files */,
+				2838FC9318918BB200746D81 /* MarkitQuoteViewController.h */,
+				2838FC9418918BB200746D81 /* MarkitQuoteViewController.m */,
+				2838FC9518918BB200746D81 /* MarkitQuoteViewController.xib */,
 			);
 			path = MarkitDataDisplayer;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2838FC37188F2A4900746D81 /* ExampleSpec.m */,
+				2838FC911891899200746D81 /* AppDelegateSpec.m */,
 				2838FC32188F2A4900746D81 /* Supporting Files */,
 			);
 			path = MarkitDataDisplayerTests;
@@ -229,6 +240,7 @@
 			files = (
 				2838FC1D188F2A4900746D81 /* InfoPlist.strings in Resources */,
 				2838FC25188F2A4900746D81 /* Images.xcassets in Resources */,
+				2838FC9718918BB200746D81 /* MarkitQuoteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2838FC9618918BB200746D81 /* MarkitQuoteViewController.m in Sources */,
 				2838FC23188F2A4900746D81 /* AppDelegate.m in Sources */,
 				2838FC1F188F2A4900746D81 /* main.m in Sources */,
 			);
@@ -290,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2838FC38188F2A4900746D81 /* ExampleSpec.m in Sources */,
+				2838FC921891899200746D81 /* AppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
